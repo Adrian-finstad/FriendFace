@@ -70,7 +70,7 @@ namespace FriendFace
 
             while(!isNumber)
             {
-                Console.WriteLine("You're dumber than I thought, please try again.");
+                Console.WriteLine("That was not a number, please try again.");
                 Console.WriteLine("Type in the number of the person you wish to add as friend");
                 isNumber = int.TryParse(Console.ReadLine(), out userInputAsNumber);
             }
@@ -86,6 +86,7 @@ namespace FriendFace
 
         public void ChooseFriendToAdd(int friendId)
         {
+    
             UserProfile.Userfriends.Add(possibleFriends[friendId]);
             possibleFriends.Remove(possibleFriends[friendId]);
             

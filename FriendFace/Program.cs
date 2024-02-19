@@ -6,8 +6,9 @@ using FriendFace;
 var profile = new Profile("","",0,"","","");
 var view = new View(profile);
 
-profile.GenerateProfile();
 
+
+profile.GenerateProfile();
 while (true)
 view.MainView();
 
